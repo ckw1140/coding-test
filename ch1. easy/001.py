@@ -1,6 +1,6 @@
-from itertools import permutations
+from itertools import combinations
 
-N, M = list(map(int, input().split()))
+N, M = map(int, input().split())
 
-for permutations in permutations(range(1, N + 1), M):
-    print(*permutations)
+for combanation in combinations(range(1, N + 1), M):
+    print(*combanation)
